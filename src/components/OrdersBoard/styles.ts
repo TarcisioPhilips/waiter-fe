@@ -10,7 +10,7 @@ export const Board = styled.div`
   align-items: center;  
   flex: 1; // flex: 1; é uma propriedade CSS que define o tamanho de um elemento em relação ao espaço disponível em seu contêiner.
 
-  header {
+  > header {
     padding: 8px;
     font-size: 14px;
     display: flex;

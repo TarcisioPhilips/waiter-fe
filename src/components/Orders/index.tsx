@@ -11,9 +11,9 @@ const orders: Order[] = [
     products: [
       {
         product: {
-          name: 'Pizza Calabresa',
-          imagePath: 'https://github.com/lucas-santana-dev/delivery-app-react-native/blob/main/assets/pizza.png?raw=true',
-          price: 40,
+          name: 'Pizza 4 Queijos',
+          imagePath: 'src/assets/images/example.png',
+          price: 25,
         },
         quantity: 3,
         _id: '1',
@@ -21,7 +21,7 @@ const orders: Order[] = [
       {
         product: {
           name: 'Pizza Calabresa',
-          imagePath: 'https://github.com/lucas-santana-dev/delivery-app-react-native/blob/main/assets/pizza.png?raw=true',
+          imagePath: 'src/assets/images/example.png',
           price: 40,
         },
         quantity: 3,
@@ -37,7 +37,7 @@ const orders: Order[] = [
       {
         product: {
           name: 'Pizza Calabresa',
-          imagePath: 'https://github.com/lucas-santana-dev/delivery-app-react-native/blob/main/assets/pizza.png?raw=true',
+          imagePath: 'src/assets/images/example.png',
           price: 40,
         },
         quantity: 3,
