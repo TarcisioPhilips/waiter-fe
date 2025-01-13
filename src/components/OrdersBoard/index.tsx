@@ -7,32 +7,26 @@ interface OrdersBoardProps {
   orders: Order[];
 }
 
-export function OrdersBoard({ title, icon }: OrdersBoardProps) {
+export function OrdersBoard({ title, icon, orders }: OrdersBoardProps) {
   return (
     <Board>
       <header>
         <span>{icon}</span>
         <strong>{title}</strong>
-        <span>(1)</span>
+        <span>({orders.length})</span>
       </header>
 
       <OrderContainer>
-        <button type="button">
-          <strong>
-            Mesa 1
-          </strong>
-          <span>
-            2 itens
-          </span>
-        </button>
-        <button type="button">
-          <strong>
-            Mesa 2
-          </strong>
-          <span>
-            2 itens
-          </span>
-        </button>
+        {orders.map((order) => (
+          <button type="button" key={order._id}>
+            <strong>
+              Mesa {order.table}
+            </strong>
+            <span>
+              {order.products.length} itens
+            </span>
+          </button>
+        ))}
       </OrderContainer>
     </Board>
 
